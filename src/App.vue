@@ -1,13 +1,28 @@
 <template>
   <div id="app">
-    <h1>Hello World</h1>
+    <ul class="todo-list">
+      <li v-for="todo in todos">
+        <div class="view">
+          <label>{{ todo.title }}</label>
+        </div>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
-  // data: {},
+  name: 'app',
+  data () {
+    return {
+      todos: [
+        {title: 'wake up', done: false},
+        {title: 'get dressed', done: false},
+        {title: 'eat breakfast', done: false},
+        {title: 'have a cup of coffee', done: false}
+      ]
+    }
+  }
   // watch: {},
   // computed: {},
   // methods: {},
