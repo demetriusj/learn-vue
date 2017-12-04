@@ -1,17 +1,24 @@
 <template>
   <div id="app">
+    <section>
+      <header>
+        <h1>TODOs</h1>
+      </header>
+    </section>
+
     <input autofocus autocomplete="off"
       placeholder="What needs to be done?"
       v-model="newTodoTitle"
       v-on:keyup.enter="addTodo">
-    <ul>
+    <ul class="todo-list">
       <li v-for="todo in todos">
-        <div class="view">
-          <label>{{ todo.title }}</label>
-          <button @click="deleteTodo(todo)">Delete</button>
-        </div>
+        <label>{{ todo.title }}</label>
+        <button @click="deleteTodo(todo)">Delete</button>
       </li>
     </ul>
+    <div v-if="!todos.length">
+      <p>Please enter a todo and type "Enter"</p>
+    </div>
   </div>
 </template>
 
@@ -55,6 +62,44 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 60px;
 }
+
+input {
+  height: 30px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.todo-list {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  list-style-type: none !important
+}
+
+.todo-list li {
+  margin-right: -25px;
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+.todo-list li label {
+  text-align: left;
+  flex-grow: 1;
+}
+.todo-list li button {
+  border: none;
+  outline: none;
+}
+
 </style>
