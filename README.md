@@ -19,7 +19,7 @@ When using vue its helpful to under stand the tooling and the framework.
 Not only does vue rely on build tools it use transpilers in the build phase
 to convert template into javascript like JSX.
 
-### Vue Framework
+### Vue Framework (Version 2)
 
 [Diagram]: https://vuejs.org/images/data.png "Diagram"
 
@@ -30,6 +30,9 @@ your application state can drive your UI directly.
 Vue also comes with many build-in features like routing, testing,
 components, etc. that many other frameworks do not support out of
 the box.
+
+- Drop-in
+- Build time bundle
 
 ### State Management
 
@@ -42,7 +45,12 @@ With reactive views the side effects are controlled directly by
 watching changes to the model and the view can read/write directly
 to the model without going through a controller.
 
-[Diagram]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel#/media/File:MVVMPattern.png "Diagram"
+![Diagram](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel#/media/File:MVVMPattern.png)
+
+### Docs
+
+[API](https://vuejs.org/v2/api/)
+[Template](https://vuejs.org/v2/guide/syntax.html#Raw-HTML)
 
 ### Template Syntax
 
