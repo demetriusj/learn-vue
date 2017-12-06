@@ -8,7 +8,7 @@ $ rm -rf src/components
 $ rm -rf src/router
 ```
 
-update src/App.vue with:
+update `src/App.vue` with:
 ```
 <template>
   <div id="app">
@@ -39,7 +39,7 @@ export default {
 </style>
 ```
 
-update src/main.js with:
+update `src/main.js` with:
 ```
 import Vue from 'vue'
 import App from './App'

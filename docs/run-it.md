@@ -2,7 +2,6 @@
 
 Lets start the basic vue project now
 ```
-start the webpack dev server
 $ npm run dev
 ```
 
@@ -14,7 +13,7 @@ $ curl -v http://localhost:8080
 
 You can see their is some magic going on, but we can talk about this later.
 
-Lets edit edit src/components/HelloWorld.vue and change
+Lets edit edit `src/components/HelloWorld.vue` and change
 ```
     return {
       msg: 'Welcome to Your Vue.js App'

@@ -1,6 +1,6 @@
 # Basic Data Binding
 
-keep in mind the data has to be a function!
+Note: Keep in mind the data has to be a function because its Application (think async)!
 
 Add some data for the todo component to render by adding:
 ```
